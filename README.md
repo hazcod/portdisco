@@ -58,7 +58,7 @@ Flags:
 - `-sample24`            number of hosts to sample per /24 in phase 2 (default: 10)
 - `-max-concurrency`     max concurrent dials per /24 probe (default: 64; cap: 512)
 - `-ports`               comma-separated TCP ports to probe (default: Nmap top 100 TCP ports)
-- `-nmap-top`            use built-in Nmap Top N TCP ports; allowed values: 100. If >0, overrides -ports (default: 0)
+- `-top-ports`           use built-in Nmap Top N TCP ports; allowed values: 100. If >0, overrides -ports (default: 0)
 - `-timeout`             per-dial timeout (default: 500ms)
 - `-prefixes`            comma-separated CIDR prefixes to scan (default: auto-detected local IPv4 networks; if none found, falls back to 10.0.0.0/8,172.16.0.0/12,192.168.0.0/16)
 - `-local-only`          only scan auto-detected local IPv4 networks; if none are detected, do not fall back and exit with an error
